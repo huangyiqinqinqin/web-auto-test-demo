@@ -12,3 +12,17 @@
 ## 环境配置
 ```bash
 pip install selenium webdriver-manager
+```
+
+## 运行测试
+```bash
+python test_bing.py
+```
+
+## 测试报告
+执行后会在 reports/ 目录生成 HTML 报告。
+```bash
+git add README.md
+git commit -m "添加项目说明文档"
+git push
+```
