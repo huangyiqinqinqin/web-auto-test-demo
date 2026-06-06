@@ -13,3 +13,21 @@
 pip install selenium playwright pytest
 playwright install
 ```
+
+## 运行测试
+```bash
+python test_selenium.py
+python test_playwright.py
+```
+
+## 测试报告
+Selenium：执行后生成 reports/report.html
+Playwright：执行后生成截图 search_result.png
+
+## 项目结构
+02_web_auto_test/
+├── test_selenium.py      # Selenium 脚本
+├── test_playwright.py    # Playwright 脚本
+├── reports/              # 测试报告目录
+│   └── report.html
+└── search_result.png     # Playwright 截图
