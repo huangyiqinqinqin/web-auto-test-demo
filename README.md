@@ -1,28 +1,15 @@
-# Web自动化测试框架
+# Web 自动化测试（Selenium + Playwright）
 
 ## 项目简介
-基于 Python + Selenium 的 Web 自动化测试框架，用于对必应搜索功能进行自动化验证。
+使用 Selenium 和 Playwright 对必应搜索进行自动化测试，支持多组关键词批量执行，自动生成测试报告。
 
 ## 功能特性
-- 数据驱动测试：支持多组关键词批量执行
-- 自动生成 HTML 测试报告
-- 失败自动截图
-- 显式等待策略，提高脚本稳定性
+- **Selenium**：显式等待、JS点击策略、HTML报告、失败截图
+- **Playwright**：自动等待、快速执行、截图保存
+- **数据驱动**：支持多组关键词批量测试
 
 ## 环境配置
 ```bash
-pip install selenium webdriver-manager
-```
-
-## 运行测试
-```bash
-python test_bing.py
-```
-
-## 测试报告
-执行后会在 reports/ 目录生成 HTML 报告。
-```bash
-git add README.md
-git commit -m "添加项目说明文档"
-git push
+pip install selenium playwright pytest
+playwright install
 ```
